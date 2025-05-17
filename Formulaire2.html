@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <title>Document</title>
+        <link rel="stylesheet" href="Formulaire2.css">
+    </head>
+    <body>
+        <h2 style="color: darkgreen; text-align: left;"><em>FORMULAIRE D'INTEGRATION</em></h2>
+        <form method="post" action="traitement.php">
+            <fieldset>
+                <legend class="bref"><p style="color: hotpink; text-align: left;"><strong>ETAT CIVIL</strong></p></legend>
+                <P><label><strong>Matricule</strong></label> : <input type="text" name="Matricule"></P>
+                <p><label><strong>Nom</strong></label> : <input type="text" name="Nom"></p>
+                <p><label><strong>Prénom</strong></label> : <input type="text" name="Prénom"></p>
+                <p><label for="text">Sexe</label>
+                    <select name="Sexe" id="Sexe">
+                     <option value="   "></option>
+                     <option value="Masculin">Masculin</option>
+                     <option value="Féminin">Féminin</option>
+                    </select>
+                </p>
+                <p><label><strong>Date de naissance</strong></label> : <input type="text" name="Date de naissance"></p>
+                <p><label><strong>Age</strong></label> : <input type="text" name="Age"></p>
+            </fieldset>
+            <fieldset>
+                <legend class="bref"><p style="color: hotpink; text-align: left;"><strong>MES DIPLOMES</strong></p></legend>
+                <input type="checkbox" name="CEP" id="CEP"/><label>CEP</label>
+                <input type="checkbox" name="BEPC" id="BEPC"/><label>BEPC</label>
+                <input type="checkbox" name="BAC" id="BAC"/><label>BAC</label>
+            </fieldset>
+            <fieldset>
+                <legend class="moi"><p style="color: hotpink;text-align: left;"><strong>EXPERTISE</strong></p></legend>
+                <input type="radio" name="Expert IT" value="Expert IT" id="Expert IT"/><label for="Expert IT">Expert IT</label>
+                <input type="radio" name="Expert Barvadage" value="Expert Barvadage" id="Expert Barvadage"/><label for="Expert Barvadage">Expert Barvadage</label>
+            </fieldset>
+            <fieldset>
+                <legend class="lui"><p style="color: hotpink; text-align: left;"><strong>LES BOUTONS</strong></p></legend>
+                <input  type="button" value="Envoyer"/>  <input type="button" value="Effacer"/>  <input type="button" value="Quitter"/>
+            </fieldset>
+        </form>
+    </body>
+</html>
